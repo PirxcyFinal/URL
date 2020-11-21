@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html style="width: 100%; height: 100%; font-size: 2min;">
+<style>
+    body {
+        font-family: "Whitney", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "Osaka", "MS PGothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+</style>
+<script> 
+    function check() {
+        url = document.getElementById("URL");
+        button = document.getElementById("button");
+        if (url.value == "") {
+            button.disabled = true;
+        } else {
+            button.disabled = false;
+        };
+    }
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>Public Pinger</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+    <p style="color: #57FF33"></p>
+    <p style="color: #FF0000"></p>
+    <form action="" method="POST">
+        URL: <input type="text" name="URL" id="URL" onchange="check()">
+        <input type="submit" id="button" disabled>
+    </form>
+</body>
+</html>
